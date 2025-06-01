@@ -10,7 +10,7 @@ function App() {
   return (
     <>
         <PageHeader />
-        <main className='container-page'>
+        <main  className='container-page'>
           <Banner />
           <ContainerCoins />
         </main>

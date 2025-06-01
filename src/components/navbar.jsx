@@ -8,9 +8,9 @@ export function Navbar () {
             <div className="logo">
                 <img src="../public/icons/logoWeb.png" alt="coin-icon" />
             </div>
-            <div className="btn">Home</div>
-            <div className="btn">Prices</div>
-            <div className="btn">About</div>
+           <a href="#header"> <div className="btn">Home</div></a>
+           <a href="#banner"> <div className="btn">Prices</div></a>
+           <a href="#footer"> <div className="btn">about</div></a>
             <svg
             className="outline"
             overflow="visible"

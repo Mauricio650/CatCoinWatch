@@ -2,7 +2,7 @@ import "../assets/bannerCredits.css"
 
 export function Banner () {
     return (
-        <article className="Container-banner">
+        <article id="banner" className="Container-banner">
             <div className="Container-banner-con-logos-in">
                <div>
                     <a href="https://www.coingecko.com/" target="_blank">

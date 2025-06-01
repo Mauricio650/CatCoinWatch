@@ -6,7 +6,7 @@ export function PageHeader () {
 
 
     return (
-        <section className="container-PH">
+        <section id='header' className="container-PH">
             <article className='container-PH-article'>
                
                 <div className='container-PH-container-text'>
