@@ -1,4 +1,4 @@
-import { useGetCryptocoins } from '../hooks/getCrytocoins.js'
+import { useGetCryptoCoins } from '../hooks/getCryptoCoins.js'
 import { useRef } from 'react'
 import { CoinList } from './CoinList.jsx'
 import { SearchInput } from './searchInput.jsx'
@@ -7,7 +7,7 @@ import '../assets/ContainerCoins.css'
 
 
 export function ContainerCoins () {
-    const {data, refreshCoin, coin} = useGetCryptocoins()
+    const {data, refreshCoin, coin} = useGetCryptoCoins()
     const inputRef = useRef(null)
     const ulRef = useRef(null)
 

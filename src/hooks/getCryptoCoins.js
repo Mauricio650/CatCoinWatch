@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { getCoins } from "../services/getCoins";
 
 
-export function useGetCryptocoins () {
+export function useGetCryptoCoins () {
     const [coin,setCoin] = useState('usd')
     const [data, setData] = useState([])
 
