@@ -1,17 +1,36 @@
 .card {
   width: 195px;
   height: 285px;
-  /* background: #313131; */
+  background: #1D1D1D;
   border-radius: 20px;;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-   border: solid 1px white;
+   border: solid 3px #C3C3C3;
   color: white;
   transition: 0.2s ease-in-out;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(116, 109, 109, 0.212) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  view-timeline-name: --card;
+  view-timeline-axis: block;
+  animation-timeline: --card;
+  animation-name: show;
+  animation-range: entry 25% cover 50%;
+  animation-fill-mode: both;
 }
+
+@keyframes show {
+  from {
+    opacity: 0;
+    scale: 50%;
+  }
+
+  to {
+    opacity: 1;
+    scale: 100%;
+  }
+}
+
 
 .img {
     width: 100px;
@@ -22,7 +41,6 @@
 }
 
 .textBox {
-  /* font-family: "Poiret One", sans-serif; */
   font-family: monospace;
 font-weight: 400;
 font-style: normal;

@@ -1,10 +1,9 @@
-import '../assets/navbar.css'
+import '../assets/fixedNavar.css'
 
-
-export function Navbar () {
+export function FixedNavar () {
     return (
-    <div className="container">
-            <div className="logo">
+        <header className="header-fix">
+            <div className="logo-fix">
                 <img src="../public/icons/coin.webp" alt="coin-icon" />
             </div>
             <nav>
@@ -18,6 +17,6 @@ export function Navbar () {
                      <button className="btn">about</button>
                 </a>
             </nav>    
-    </div>
+        </header>
     )
 }

@@ -6,3 +6,13 @@
 
 
 
+.container-navbar{
+  position: absolute;
+  width: 22%;
+  top: 5%;
+  left: 14%;
+  display: flex;
+  align-items:flex-start;
+  justify-content: center;
+  z-index: 10;
+}

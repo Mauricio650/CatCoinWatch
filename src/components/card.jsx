@@ -3,7 +3,7 @@ import '../assets/card.css'
 export function Card ({id,symbol,name,image, current_price, coin}) {
     return (
 <div id={id} className="card">
-        <img className="img" src={image} alt={'logo of ' + name} />
+        <img className="img" src={image} alt={'logo of ' + name} loading='lazy' />
     <div className="textBox">
         <p className="text head">{name}</p>
         <span>{symbol}</span>

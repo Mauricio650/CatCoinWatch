@@ -7,8 +7,10 @@
     align-content: center;
     gap: 2rem;
     margin-bottom: 2rem;
+    
 }
 
+  
 
 .list-coins {
     width: 100%;
@@ -20,7 +22,12 @@
     margin: 0;
     justify-content: center;
     justify-items: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    content-visibility: auto;
+    
 }
+
 
 
 .remove {
