@@ -9,11 +9,11 @@ function App() {
 
   return (
     <>
-      <PageHeader />
-      <main className='container-page'>
-      <Banner />
-      <ContainerCoins />
-      </main>
+        <PageHeader />
+        <main className='container-page'>
+          <Banner />
+          <ContainerCoins />
+        </main>
     </> 
   )
 }

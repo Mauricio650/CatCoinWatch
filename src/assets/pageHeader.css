@@ -3,10 +3,10 @@
     height: 95vh;
     background-color:hsla(0,0%,0%,1);
     background-image:
-    radial-gradient(at 40% 20%,  rgba(76, 71, 71, 0.452) 0px, transparent 50%),
-    radial-gradient(at 80% 0%, rgba(124, 119, 119, 0.356) 0px, transparent 50%),
-    radial-gradient(at 0% 50%, rgba(133, 131, 131, 0.199) 0px, transparent 50%),
-    radial-gradient(at 0% 0%, rgba(76, 71, 71, 0.411) 0px, transparent 50%);
+    radial-gradient(at 40% 20%,  rgba(76, 71, 71, 0.128) 0px, transparent 50%),
+    radial-gradient(at 80% 0%, rgba(124, 119, 119, 0.201) 0px, transparent 50%),
+    radial-gradient(at 0% 50%, rgba(133, 131, 131, 0.183) 0px, transparent 50%),
+    radial-gradient(at 0% 0%, rgba(76, 71, 71, 0.261) 0px, transparent 50%);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -39,9 +39,9 @@ gap: 1rem;
 .container-PH-container-text p {
 color: white;
 font-family: "Poiret One", sans-serif;
-font-weight: 400;
+font-weight: bolder;
 font-style: normal;
-font-size: 1.3rem;
+font-size: 1.5rem;
 color: #ffaa00;
 text-align: center;
 text-shadow: 3px 3px 3px black;
@@ -51,9 +51,9 @@ animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
 
 .container-PH-container-text h1 {
  font-family: "Underdog", system-ui;
-  font-weight: 400;
+ font-weight: bolder;
   font-style: normal;
-  font-size: 4rem;
+  font-size: 6rem;
   color: #DBDBDB;
   text-shadow: 4px 6px 4px black;
 }

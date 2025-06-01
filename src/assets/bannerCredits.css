@@ -1,4 +1,5 @@
 .Container-banner {
+    position: relative;
     width: 100%;
     height: 80%;
     margin-top: 5rem;
@@ -8,9 +9,41 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-radius: 10px;
-    border: solid 1px white;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    border-radius: 5px;
+    border: solid 1px rgb(6, 5, 5);
+    box-shadow: rgba(4, 2, 2, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+
+@property --angle {
+    syntax: "<angle>";
+    initial-value: 0deg;
+    inherits: false;
+}
+
+.Container-banner::after, .Container-banner::before  {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: conic-gradient(from var(--angle),rgb(253, 253, 253), transparent 40%);
+    top: 50%;
+    left: 50%;
+    translate : -50% -50%;
+    z-index: -1;
+    padding: 3px;
+    border-radius: 5px;
+    animation: spin linear 5s infinite;
+}
+
+.Container-banner::before {
+   filter: blur(1rem);
+   opacity: 0.5;
+}
+
+@keyframes spin {
+    from { --angle: 0deg; }
+    to { --angle:360deg; }
 }
 
 
