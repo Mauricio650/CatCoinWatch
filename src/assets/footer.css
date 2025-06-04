@@ -1,0 +1,21 @@
+.page-footer {
+    width: 100%;
+    height: 70px;
+    color: rgb(0, 0, 0);
+    display: flex;
+    background-color: #E2A225;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 2rem;
+    font-family: monospace;
+    text-shadow: 3px 3px  #ffffff;
+}
+
+
+.container-icons {
+    gap: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

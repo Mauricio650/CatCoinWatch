@@ -6,7 +6,7 @@ import { ButtonGod } from './buttonU.jsx'
 import '../assets/ContainerCoins.css'
 
 
-export function ContainerCoins () {
+export function ContainerCoins ({toast}) {
     const {data, refreshCoin, coin} = useGetCryptoCoins()
     const inputRef = useRef(null)
     const ulRef = useRef(null)
@@ -32,8 +32,8 @@ export function ContainerCoins () {
             <SearchInput inputRef={inputRef} handleWrite={handleWrite}/>
           </div>
           <div className='container-btns'>
-            <ButtonGod refreshCoin={refreshCoin} symbol={'€'} currency={'eur'} />
-            <ButtonGod refreshCoin={refreshCoin} symbol={'$'} currency={'usd'} />
+            <ButtonGod toast={toast} refreshCoin={refreshCoin} symbol={'€'} currency={'eur'} />
+            <ButtonGod toast={toast} refreshCoin={refreshCoin} symbol={'$'} currency={'usd'} />
           </div>
           <CoinList coin={coin} data={data} ulRef={ulRef}/>
          </section>

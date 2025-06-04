@@ -12,6 +12,7 @@
     animation-timeline: scroll(root);
     transition: all ease-in 200ms;
     gap: 0.5rem;
+    z-index: 50;
 }
 
 

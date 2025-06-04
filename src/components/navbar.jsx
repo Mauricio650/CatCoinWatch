@@ -15,7 +15,7 @@ export function Navbar () {
                      <button className="btn">Prices</button>
                 </a>
                 <a href="#footer">
-                     <button className="btn">about</button>
+                     <button className="btn">about me</button>
                 </a>
             </nav>    
     </div>
