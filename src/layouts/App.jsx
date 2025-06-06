@@ -22,9 +22,7 @@ function App() {
        </div>
 
        <FixedNavar/>
-        <header className='container-navbar'>
-          <Navbar />
-        </header>
+       
 
         <PageHeader />
 

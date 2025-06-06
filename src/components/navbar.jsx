@@ -7,7 +7,7 @@ export function Navbar () {
             <div className="logo">
                 <img src="../public/icons/coin.webp" alt="coin-icon" />
             </div>
-            <nav>
+            <nav className='nav-container'>
                 <a href="#header">
                      <button className="btn">Home</button>
                 </a>
@@ -15,7 +15,7 @@ export function Navbar () {
                      <button className="btn">Prices</button>
                 </a>
                 <a href="#footer">
-                     <button className="btn">about me</button>
+                     <button className="btn">about</button>
                 </a>
             </nav>    
     </div>

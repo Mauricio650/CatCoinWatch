@@ -26,12 +26,23 @@
 
 .container-PH-container-text{
 width: 50%;
+height: 100%;
 display: flex;
 flex-direction: column;
 justify-content: center;
 align-items: center;
 gap: 1rem;
+position: relative;
+}
 
+
+.container-navbar{
+  position: absolute;
+  width: 100%;
+  top: 5%;
+  display: flex;
+  justify-content: center;
+  z-index: 10;
 }
 
 
@@ -48,9 +59,10 @@ text-shadow: 3px 3px 3px black;
 animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
 }
 
+
 .container-PH-container-text h1 {
   font-family: 'ClashDisplay', sans-serif;
-  font-size: 4.5rem;
+  font-size: 4rem;
   font-weight: bold;
   line-height: 1.2;
   text-align: center;
@@ -97,3 +109,40 @@ align-items: center;
 }
 
 
+@media (max-width:1024px) {
+  .container-PH-article{
+    flex-direction: column-reverse;
+}
+
+.container-PH-container-img{
+  width: 100%;
+  }
+
+  .container-PH-container-text {
+    position: static;
+    width: 100%;
+  }
+  
+  .container-navbar{
+    top: 2%;
+   }
+
+}
+
+
+@media (max-width:720px) {
+  .container-PH-container-text {
+    width: 100%;
+  }
+  .container-PH-container-text p {
+   
+    font-size: 0.8rem;
+    
+    }
+
+    .container-PH-container-text h1 {
+      font-size: 2.5rem;
+      
+    }
+
+}

@@ -71,10 +71,27 @@
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-/* .Container-banner-con-img img {
-    width: 60%;
-} */
+
 
 .logo-gecko{
     width: 300px;
+}
+
+
+@media (max-width: 700px) {
+    .Container-banner-con-logos-polly .polly-text {
+        font-size: 0.8rem;
+    }
+
+    .logo-gecko{
+        width: 100px;
+    }
+
+    .Container-banner-con-logos-in{
+        gap: 4rem;
+    }
+    
+    .Container-banner-con-logos-polly svg {
+        width: 25px;
+    }
 }
