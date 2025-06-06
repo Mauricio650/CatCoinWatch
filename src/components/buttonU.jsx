@@ -7,7 +7,7 @@ export function ButtonGod({refreshCoin, symbol, currency, toast}) {
 
     const handleClick = () => {
         if(timeChangeCoin.current) {
-            return toast('Please wait 25 seconds before changing currency',
+            return toast('Please wait 10 seconds before changing currency',
                 {
                   icon: '⏳',
                   style: {
@@ -26,7 +26,7 @@ export function ButtonGod({refreshCoin, symbol, currency, toast}) {
         timeChangeCoin.current = true
         setTimeout(()=>{
             timeChangeCoin.current = false
-        },25000)
+        },10000)
     }
 
 
