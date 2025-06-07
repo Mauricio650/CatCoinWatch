@@ -1,12 +1,94 @@
-# React + Vite
+# CatCoinWatch
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern cryptocurrency tracking application built with React and Vite, featuring real-time price monitoring.
 
-Currently, two official plugins are available:
+## 🚀 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Real-time cryptocurrency price tracking
+- Interactive 3D visualization using React-three-fiber
+- Responsive grid layout for coin display
+- Search functionality for cryptocurrencies
+- Modern and clean user interface
 
-## Expanding the ESLint configuration
+## 🛠️ Technologies
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- React 
+- HTML
+- CSS
+- Vite 
+
+## 📦 Installation
+
+1. Clone the repository:
+```bash
+git clone https://github.com/yourusername/CatCoinWatch.git
+cd CatCoinWatch
+```
+
+2. Install dependencies:
+```bash
+npm install
+# or
+pnpm install
+```
+
+3. Start the development server:
+```bash
+npm run dev
+# or
+pnpm dev
+```
+
+## 🏗️ Available Scripts
+
+- `npm run dev` - Start development server
+- `npm run build` - Build for production
+- `npm run preview` - Preview production build
+- `npm run lint` - Run ESLint
+
+## 🎨 Project Structure
+
+```
+CatCoinWatch/
+├── src/
+│   ├── assets/                 # Static assets and styles
+│   │   ├── fonts/             # Custom fonts
+│   │   ├── app.css            # Main application styles
+│   │   ├── card.css           # Card component styles
+│   │   ├── navbar.css         # Navigation styles
+│   │   ├── footer.css         # Footer styles
+│   │   └── ...                # Other component styles
+│   │
+│   ├── components/            # React components
+│   │   ├── CatModel.jsx       # 3D cat model component
+│   │   ├── ContainerCoins.jsx # Coin container component
+│   │   ├── CoinList.jsx       # Coin list component
+│   │   ├── card.jsx           # Individual coin card
+│   │   ├── navbar.jsx         # Navigation component
+│   │   ├── Footer.jsx         # Footer component
+│   │   ├── searchInput.jsx    # Search functionality
+│   │   └── ...                # Other UI components
+│   │
+│   ├── hooks/                 # Custom React hooks
+│   │
+│   ├── layouts/              # Layout components
+│   │
+│   ├── services/             # API and service functions
+│   │
+│   ├── main.jsx             # Application entry point
+│   └── index.css            # Global styles
+│
+├── public/                  # Public static files
+├── index.html              # HTML entry point
+├── vite.config.js          # Vite configuration
+├── package.json            # Project dependencies
+└── README.md              # Project documentation
+```
+
+## 🤝 Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+## 📝 License
+
+This project is licensed under the MIT License
