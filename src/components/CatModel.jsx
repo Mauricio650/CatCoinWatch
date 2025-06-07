@@ -6,7 +6,7 @@ import "../assets/cat.css"
 
 
 function Cat () {
-    const gltf = useGLTF("/models/Cat.glb")
+    const gltf = useGLTF("models/Cat.glb")
     return (
     <primitive
       object={gltf.scene}
