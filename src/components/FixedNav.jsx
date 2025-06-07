@@ -4,7 +4,7 @@ export function FixedNavar () {
     return (
         <header className="header-fix">
             <div className="logo-fix">
-                <img src="/icons/coin.webp" alt="coin-icon" />
+                <img src="icons/coin.webp" alt="coin-icon" />
             </div>
             <nav>
                 <a href="#header">
