@@ -5,7 +5,7 @@ export function Navbar () {
     return (
     <div className="container">
             <div className="logo">
-                <img src="../public/icons/coin.webp" alt="coin-icon" />
+                <img src="/icons/coin.webp" alt="coin-icon" />
             </div>
             <nav className='nav-container'>
                 <a href="#header">
