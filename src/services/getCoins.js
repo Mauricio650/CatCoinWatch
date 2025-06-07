@@ -1,7 +1,8 @@
 export const getCoins = async ({coin}) => {
     
            try {
-            const res = await fetch(`https://api.coingecko.com/api/v3/coins/markets?vs_currency=${coin}&x_cg_demo_api_key=CG-RLJKywJDuCV5J4vpF6vQtao5`);
+            const apiKey = import.meta.env.VITE_COINGECKO_API_KEY
+            const res = await fetch(`https://api.coingecko.com/api/v3/coins/markets?vs_currency=${coin}&x_cg_demo_api_key=${apiKey}`);
             if (!res.ok) {
                 throw new Error('error en la respuesta del servidor:', res.status);
             }
